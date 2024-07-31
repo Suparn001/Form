@@ -2,7 +2,7 @@
 $insert = false;
 if (isset($_POST['name'])) {
     $server = "localhost";
-    $username = "phpmyadmin";
+    $username = "root";
     $password = "";
     $database = "z_trip"; // Add your database name
 
@@ -62,14 +62,14 @@ if (isset($_POST['name'])) {
         ?>
 
         <form action="index.php" method="post">
-            <input type="text" name="name" id="name" placeholder="Enter Your name">
-            <input type="text" name="age" id="age" placeholder="Enter Your age">
-            <input type="text" name="gender" id="gender" placeholder="Enter Your gender">
-            <input type="text" name="email" id="email" placeholder="Enter Your email">
-            <input type="text" name="phone" id="phone" placeholder="Enter Your phone">
-            <input type="text" name="address" id="address" placeholder="Enter Your address">
+            <input type="text" name="name" id="name" placeholder="Enter Your name" required>
+            <input type="text" name="age" id="age" placeholder="Enter Your age" required>
+            <input type="text" name="gender" id="gender" placeholder="Enter Your gender" required>
+            <input type="text" name="email" id="email" placeholder="Enter Your email" required>
+            <input type="text" name="phone" id="phone" placeholder="Enter Your phone" required>
+            <input type="text" name="address" id="address" placeholder="Enter Your address" required>
             <textarea name="Other_Information" id="other" cols="30" rows="10" placeholder="Enter more information"></textarea>
-            <button class="btn">Submit</button>
+            <button class="btn" type="submit">Submit</button>
         </form>
     </div>
 </body>
