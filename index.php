@@ -3,7 +3,7 @@ $insert = false;
 if (isset($_POST['name'])) {
     $server = "localhost";
     $username = "phpmyadmin";
-    $password = "Suparn@#$1234";
+    $password = "";
     $database = "z_trip"; // Add your database name
 
     // Create connection
